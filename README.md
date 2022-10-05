@@ -9,12 +9,12 @@ TIC-TAC-TOE
 <p align="center">Game for two players who take turns marking the spaces in a three-by-three grid with X or O.</p>
 <p align="center">This is the third project created in the GeekHub Academy Bootcamp. A way to evaluate the knowledge acquired during the third and fourth week of bootcamp. </p>
 
-### Genre: <p>Pen and paper game</p>
-### Players: <p>2</p>
-### Strategy: <p>High</p>
-### Skills: <p>Strategy, tactics, observation</p>
-### Ages: <p>All</p>
-### Complexity: <p>Little</p>
+<strong>Genre:</strong> <p>Pen and paper game</p>
+<strong>Players:</strong> <p>2</p>
+<strong>Strategy:</strong> <p>High</p>
+<strong>Skills:</strong> <p>Strategy, tactics, observation</p>
+<strong>Ages:</strong> <p>All</p>
+<strong>Complexity:</strong> <p>Little</p>
 
 
 #### Parts:
