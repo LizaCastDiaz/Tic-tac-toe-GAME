@@ -49,7 +49,13 @@ TIC-TAC-TOE
 ### Colores: 
 #### Colores Utilizados: 
 
-<img src="../assets/paletas.png" width="50%" height="50%" alt="">
+<img src="./assets/paletas.png" width="50%" height="50%" alt="">
+
+
+header-fotter: rgb(255, 205, 56)
+main: rgb(255, 217, 105)
+lines: rgb(255, 230, 156)
+
 
 
 <hr>

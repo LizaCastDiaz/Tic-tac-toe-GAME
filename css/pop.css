@@ -1,0 +1,16 @@
+:root{
+    --header-color: rgba(255, 205, 56, 0.902);
+    --body-color: rgba(244, 216, 132, 0.876);
+    --lines-color: rgb(255, 230, 156);
+    --font-color: black;
+    --ff-primary: 'Noto Sans Mono', monospace;
+    --ff-heading: var(--ff-primary);
+  
+
+}
+
+
+/* HEADER */
+body{
+    font-family:var(--ff-heading);
+}
