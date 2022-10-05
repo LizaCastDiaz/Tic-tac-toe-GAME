@@ -30,14 +30,13 @@ TIC-TAC-TOE
 
 ### Herramientas
 
+<hr>
 
-
----
 ### plugins chrome
-
----
-
 ### Fonts
+
+
+<hr>
 
 ### Tecnologias:
 - HTML
@@ -45,12 +44,9 @@ TIC-TAC-TOE
 - Bootstrap5
 - Javascrip
 
+<hr>
 
-
-<img src="" alt="">
-
----
-### Colores 
+### Colores: 
 #### Colores Utilizados: 
 1. 
 2.  
@@ -58,21 +54,22 @@ TIC-TAC-TOE
 4. 
 
 
+<hr>
+
+### Documentacion utilizada:
+
+##### 1.
+
+
+##### 2.
+
+
+##### 3.
+
+
+
 ---
-### Documentacion utilizada
-
-#### 1.
-
-
-#### 2.
-
-
-#### 3.
-
-
-
----
-### Referencias.
+### Referencias:
 
 -https://en.wikipedia.org/wiki/Tic-tac-toe
 -https://playtictactoe.org/
