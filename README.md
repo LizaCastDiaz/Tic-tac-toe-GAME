@@ -5,7 +5,7 @@
 TIC-TAC-TOE
 <h1 align="center"> TIC-TAC-TOE GAME</h1> 
 <hr>
-<h3 align="center">Game for two players who take turns marking the spaces in a three-by-three grid with X or O. </h3>
+<h6 align="center">Game for two players who take turns marking the spaces in a three-by-three grid with X or O. </h3>
 <p align="center">This is the third project created in the GeekHub Academy Bootcamp. A way to evaluate the knowledge acquired during the third and fourth week of bootcamp. </p>
 
 <strong>Genre:</strong> <p>Pen and paper game</p>
@@ -48,10 +48,8 @@ TIC-TAC-TOE
 
 ### Colores: 
 #### Colores Utilizados: 
-1. 
-2.  
-3. 
-4. 
+
+<img src="../assets/paletas.png" width="50%" height="50%" alt="">
 
 
 <hr>
