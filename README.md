@@ -3,11 +3,18 @@ Game for two players who take turns marking the spaces in a three-by-three grid 
 
 
 
-KARMA.
+TIC-TAC-TOE
 <h1 align="center"> TIC-TAC-TOE GAME </h1>
 <h5 align="center">Game for two players who take turns marking the spaces in a three-by-three grid with X or O. </h5>
 
 <p align="center">This is the third project created in the GeekHub Academy Bootcamp. A way to evaluate the knowledge acquired during the third and fourth week of bootcamp. </p>
+
+###Genre: <p>Pen and paper game</p>
+###Players: <p>2</p>
+###Strategy: <p>High</p>
+###Skills: <p>Strategy, tactics, observation</p>
+###Ages: <p>All</p>
+###Complexity: <p>Little</p>
 
 
 #### Parts:
@@ -84,6 +91,7 @@ KARMA.
 ### Referencias.
 
 -https://en.wikipedia.org/wiki/Tic-tac-toe
+-https://playtictactoe.org/
 
 
 
