@@ -17,6 +17,8 @@
 /* HEADER */
 body{
     font-family:var(--ff-heading);
+    background-color: var(--header-color);
+    
 }
 
 .con-header {
@@ -47,11 +49,6 @@ body{
     width: 100vw;
     background-color: var(--body-color);
 }
-.main-container-board{
-    background-color: );
-
-
-}
 
 .box-container{ 
     width: 20vw;
@@ -78,8 +75,14 @@ body{
 }
 #box-tres {
     border-bottom: solid 3px black;
-   
 
+}
+#box-siete{
+    border-right: solid 3px black;
+      }
+#box-ocho{
+    border-right: solid 3px black;
+        
 }
 
 /* BOARD GAME */

@@ -10,10 +10,13 @@
 
 }
 
+/************************ LANDING PAGE AND PLAYERS *************************/
 
 /* HEADER */
 body{
     font-family:var(--ff-heading);
+    background-color: var(--header-color);
+    
 }
 
 .con-header {
@@ -25,7 +28,6 @@ body{
 .con-row {
     background-color :var(--header-color);
     height: 100%;
-    width: 100vw;
     
     
 }
@@ -35,11 +37,34 @@ body{
    height: 70%;
     
 } 
-/* MAIN LANDING PAGE */
+
+
+/* MAIN */
 .main-container{
     display: flex;
     align-items: center;
-    height: 90vh;
+    height: 70vh;
     width: 100vw;
     background-color: var(--body-color);
 }
+
+h1{
+    font-family: var(--ff-heading);
+    font-weight: 700;
+}  
+
+
+
+
+/* footer */
+/* .footer {
+    background-color: var(--header-color);
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+}
+
+h2{
+    font-family: var(--ff-heading);
+    font-weight: 900;
+}  */
