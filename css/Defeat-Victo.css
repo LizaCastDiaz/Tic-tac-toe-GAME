@@ -1,0 +1,66 @@
+:root{
+    --header-color: rgba(245, 204, 79, 0.823);
+    --body-color: rgba(244, 216, 132, 0.876);
+    --lines-color: rgb(255, 230, 156);
+    --random-color: rgb(83, 53, 132);
+    --font-color: black;
+    --ff-primary: 'Noto Sans Mono', monospace;
+    --ff-heading: var(--ff-primary);
+  
+
+}
+
+/************************ LANDING PAGE AND PLAYERS *************************/
+
+/* HEADER */
+body{
+    font-family:var(--ff-heading);
+    background-color: var(--body-color);
+    
+}
+
+
+
+
+
+
+
+/* MAIN */
+.main-container{
+    display: flex;
+    align-items: center;
+    height: 70vh;
+    width: 100vw;
+   
+}
+
+h1{
+    font-family: var(--ff-heading);
+    font-weight: 700;
+}  
+
+
+/* VICTORY PAGE */
+
+#OX {
+    width: 10%;
+    height: 60%;
+}
+
+#Draw{
+    width: 45%;
+    height: 60%;
+
+}
+/* footer */
+/* .footer {
+    background-color: var(--header-color);
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+}
+
+h2{
+    font-family: var(--ff-heading);
+    font-weight: 900;
+}  */
