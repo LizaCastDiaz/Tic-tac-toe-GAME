@@ -15,7 +15,7 @@
 /* HEADER */
 body{
     font-family:var(--ff-heading);
-    background-color: var(--body-color);
+    background-color: var(--header-color);
     
 }
 

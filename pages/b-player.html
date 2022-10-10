@@ -37,19 +37,46 @@
             </div>
         </div>
         <!-- LANDING PAGE -->
-        <div class="main-container d-flex flex-column">
+        <div class="main-container d-flex flex-column ">
             <div
                 class="container main-container-board flex-column m-5 h-100 w-55 p-0  text-center d-flex align-items-center justify-content-center ">
                 <div class="row m-0 ">
                     <div class="container">
                         <div class="row justify-content-md-center flex-column">
                           <div class="col col-lg ">
-                            <h1><strong>Welcome to TIC TAC TOE game</strong></h1>
+                            <h1><strong>Choose</strong></h1>
                           </div>
+                          <form class="row g-3 justify-content-md-center flex-column needs-validation" novalidate="">
+                            <div class="col position-relative">
+                              <label for="validationTooltip01" class="form-label">Name</label>
+                              <input type="text" class="form-control" id="validationTooltip01" value="" required="">
+                              <div class="valid-tooltip">
+                                Looks good!
+                              </div>
+                            </div>
+                           
+                           
+                            <div class="col position-relative ">
+                              <label for="validationTooltip04" class=" form-label">Players</label>
+                              <select class="form-select" aria-label="Default select example">
+                                <option selected>Select</option>
+                                <option value="1">CPU</option>
+                                <option value="2">2nd Player</option>
+                              </select>
+                       
+                            </div>
+                            <div class="col-12">
+                              <button class="btn btn-outline-dark btn-sm mt-2 px-2" type="submit">Start the game</button>
+                            </div>
+                          </form>
+                          
+                          
                         
-                          <div class="col-md-auto mt-3">
+                          <!-- <div class="col-md-auto mt-3">
                             <button type="button" class="btn w-50 btn-outline-dark">PLAY</button>
-                          </div>
+                            <button type="button" class="btn w-50 btn-outline-dark">PLAY</button>
+
+                          </div> -->
                         </div>
 
                 </div>
