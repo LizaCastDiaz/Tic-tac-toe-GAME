@@ -1,6 +1,8 @@
 let tablero = ["","","","","","","","",""];
 let jugadorActivo = "X";
 let gameActive = true;
+let playerOneName = localStorage.getItem("firstPlayer");
+let playerSecondName = localStorage.getItem("secondPlayer");
 
 const celdas = document.querySelectorAll(".celda");
 const boardDisplay = document.querySelector(".game--status");
@@ -9,12 +11,13 @@ const boardDisplay = document.querySelector(".game--status");
 function gestionClick(event){
     const celdaActiva = event.target;
     const celdaNumero = parseInt(celdaActiva.getAttribute('data-celda')); 
+    const xContainer = document.querySelector('#xContainer');
+    const oContainer = document.querySelector('#oContainer');
 
 
     // REVISAR SI LA CELDA ESTÁ VACÍA
     // SI ESTÁ VACÍA, CONTINUAR MARCANDO LA POSICIÓN
     // EN EL ARRAY Y EN EL TABLERO VISIBLE
-
     if (celdaActiva.innerHTML !== "") {
         console.log('celda ya está ocupada');
         return;
@@ -40,6 +43,19 @@ function gestionClick(event){
     } else {
         jugadorActivo = "X";
     }
+
+
+    // OCULTAR SÍMBOLO DEL JUGADOR ACTIVO AL CAMBIAR DE TURNO
+
+
+    // SI LA VARIABLE jugadorActivo ES IGUAL A "X", ENTONCES
+    // OCULTAR EL CONTENEDOR DEL SÍMBOLO "O" Y VICEVERSA
+    // USAR classList POR EJEMPLO:
+    xContainer.classList.toggle('visually-hidden');
+    oContainer.classList.toggle('visually-hidden');
+
+
+
 
 }
 
@@ -83,8 +99,26 @@ function resultValidation(){
     }
 
     if (roundWon) {
-        boardDisplay.innerHTML = "Ganó";
+        let winnerName;
+
+        if(jugadorActivo === 'X') {
+            winnerName = playerOneName;
+        } else {
+            winnerName = playerSecondName;
+        }
+
+        boardDisplay.innerHTML = "Ganó " + winnerName; // QUIEN PUTAS GANO
         gameActive = false;
         return;
     }
 }
+
+function pageLoad() {
+    let playerOneContainer = document.querySelector("#playerOneName");
+    let playerSecondContainer = document.querySelector("#playerSecondName");
+
+    playerOneContainer.innerHTML = playerOneName;
+    playerSecondContainer.innerHTML = playerSecondName;
+}
+
+window.onload = pageLoad();
