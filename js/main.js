@@ -1,6 +1,8 @@
 let tablero = [];
 let jugadorActivo = "X";
+let gameActive = true;
 const celdas = document.querySelectorAll(".celda");
+const boardDisplay = document.querySelector(".game--status");
 const winningConditions = [
     [0, 1, 2],
     [3, 4, 5],
@@ -11,8 +13,6 @@ const winningConditions = [
     [0, 4, 8],
     [2, 4, 6]
 ];
-
-
 
 function gestionClick(event){
     const celdaActiva = event.target;
@@ -48,3 +48,25 @@ function gestionClick(event){
 celdas.forEach(celda => celda.addEventListener("click", gestionClick));
 
 
+function ResultValidation(){
+    let roundWon = false;
+    for (let i = 0; i <= 7; i++){
+        const winningConditions = winningConditions[i];
+        let a = celdas[winCondition[0]];
+        let b = celdas[winCondition[1]];
+        let c = celdas[winCondition[2]];
+
+        if (a === '' || b === '' || c === '') {
+            continue;
+        }
+        if (a === b && b === c){
+            roundWon = true;
+            break
+        }
+    }
+    if (roundWon) {
+        boardDisplay.innerHTML = victoryMessage();
+        gameActive = false;
+        return;
+    }
+}
