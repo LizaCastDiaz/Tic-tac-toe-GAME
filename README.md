@@ -46,16 +46,9 @@ TIC-TAC-TOE
 
 <hr>
 
-### Colores: 
-#### Colores Utilizados: 
+### Colores utilizados: 
 
 <img src="./assets/paletas.png" width="50%" height="50%" alt="">
-
-
-header-fotter: rgb(255, 205, 56)
-main: rgb(255, 217, 105)
-lines: rgb(255, 230, 156)
-
 
 
 <hr>
@@ -63,20 +56,20 @@ lines: rgb(255, 230, 156)
 ### Documentacion utilizada:
 
 ##### 1.
-https://manualestutor.com/javascript/crea-un-juego-tic-tac-toe-usando-javascript/
-
+https://www.w3schools.com/jsref/jsref_random.asp
 ##### 2.
-
-
+https://stackoverflow.com/
 ##### 3.
 
 
 
 ---
-### Referencias:
+### Referencias y codigo en el que me apoye
 
 -https://en.wikipedia.org/wiki/Tic-tac-toe
 -https://playtictactoe.org/
+-https://codepen.io/lando464/pen/BPGEKO
+https://manualestutor.com/javascript/crea-un-juego-tic-tac-toe-usando-javascript/
 
 
 

@@ -1,7 +1,7 @@
 :root{
     --header-color: rgba(245, 204, 79, 0.823);
     --body-color: rgba(244, 216, 132, 0.876);
-    --lines-color: rgb(255, 230, 156);
+    --lines-color: #ffe69c;
     --random-color: rgb(83, 53, 132);
     --font-color: black;
     --ff-primary: 'Noto Sans Mono', monospace;
