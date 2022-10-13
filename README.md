@@ -63,7 +63,7 @@ lines: rgb(255, 230, 156)
 ### Documentacion utilizada:
 
 ##### 1.
-
+https://manualestutor.com/javascript/crea-un-juego-tic-tac-toe-usando-javascript/
 
 ##### 2.
 

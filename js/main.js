@@ -1,5 +1,10 @@
+//VARIABLES
+let oContador = 0;
+let xContador = 0;
 let tablero = ["","","","","","","","",""];
 let jugadorActivo = "X";
+let random;
+let empyCells = tablero;
 let gameActive = true;
 let playerOneName = localStorage.getItem("firstPlayer");
 let playerSecondName = localStorage.getItem("secondPlayer");
@@ -8,11 +13,24 @@ const celdas = document.querySelectorAll(".celda");
 const boardDisplay = document.querySelector(".game--status");
 
 
+
+
+
 function gestionClick(event){
     const celdaActiva = event.target;
     const celdaNumero = parseInt(celdaActiva.getAttribute('data-celda')); 
     const xContainer = document.querySelector('#xContainer');
     const oContainer = document.querySelector('#oContainer');
+
+    // if (jugadorActivo >= 0){
+    //     xContador +
+        
+    // } else{
+    //     oContador
+    // }
+
+ //si el jugador activo llega hasta la tercera X entoces no puedo seguir jugando y debe de quitar 1.
+
 
 
     // REVISAR SI LA CELDA ESTÁ VACÍA
@@ -54,14 +72,32 @@ function gestionClick(event){
     xContainer.classList.toggle('visually-hidden');
     oContainer.classList.toggle('visually-hidden');
 
+   
+
+
+
 
 
 
 }
 
+ // COMPUTER GAME
+function computerMove(){
+    tablero.forEach(function(tablero){
+        if (tablero.random == ''){
+            empyCells.push(tablero);
+        }
+    })
+}
+
+random = Math.ceil(Math.random() * empyCells.length) - 1;
+empyCells[random].textContent = O;
+
+
+
+//WINNING CONDITIONS
 
 celdas.forEach(celda => celda.addEventListener("click", gestionClick));
-
 
 const winningConditions = [
     [0, 1, 2],
@@ -107,7 +143,7 @@ function resultValidation(){
             winnerName = playerSecondName;
         }
 
-        boardDisplay.innerHTML = "Ganó " + winnerName; // QUIEN PUTAS GANO
+        boardDisplay.innerHTML = "Ganó " + winnerName; // Quien gano?
         gameActive = false;
         return;
     }
@@ -122,3 +158,11 @@ function pageLoad() {
 }
 
 window.onload = pageLoad();
+
+
+
+/////RESET BUTTON/////
+
+function refreshPage(){
+    window.location.reload();
+}
