@@ -38,13 +38,16 @@
                     </div>
                     <div class="col d-flex  flex-column justify-content-center">
                         <h1>
-                            <strong>YOU ARE A WINNER!!!</strong>
+                            <strong> <span id="winnerName"></span> WON!!!</strong>
                         </h1>
                     </div>
-                    <div class="d-grid gap-2 col-6 mt-3  d-flex justify-content-center w-100">
-                        <button class="btn p-2 btn-outline-dark btn-sm px-5" type="button">
-                            <strong>Start again</strong>
-                        </button>
+                    <a class="d-grid gap-2 col-6 mt-3  d-flex justify-content-center w-100">
+                        <a href="./b-player.html">
+                            <button class="btn p-2 btn-outline-dark btn-sm px-5" type="button">
+                                <strong> Start again</strong>
+                            </button>
+                        </a>
+
                     </div>
 
                 </div>
@@ -52,6 +55,13 @@
             </div>
 
         </div>
+        <script>
+            let winnerName = localStorage.getItem("winnerName");
+            let winnerContainer = document.querySelector("#winnerName");
+            winnerContainer.innerHTML = winnerName;
+
+        </script>
 
     </body>
+
 </html>

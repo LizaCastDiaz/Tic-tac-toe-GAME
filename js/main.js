@@ -1,6 +1,4 @@
 //VARIABLES
-let oContador = 0;
-let xContador = 0;
 let tablero = [
     "",
     "",
@@ -16,6 +14,10 @@ let jugadorActivo = "X";
 let gameActive = true;
 let playerOneName = localStorage.getItem("firstPlayer");
 let playerSecondName = localStorage.getItem("secondPlayer");
+let isCPUplaying = playerSecondName === 'cpu' ? true : false;
+
+
+
 
 const celdas = document.querySelectorAll(".celda");
 const boardDisplay = document.querySelector(".game--status");
@@ -27,15 +29,36 @@ function computerMove() {
         if (tablero[i] === "") {
             emptyCellsIndex.push(i);
     
-        }
-
-    const random = Math.ceil(Math.random() * tablero.length) - 1;
-    emptyCellsIndex[random].oContainer = jugadorActivo;
-    resultValidation();
-    jugadorActivo();
-  }
+        }        
     }
-    console.log(computerMove);
+    const random = Math.ceil(Math.random() * emptyCellsIndex.length) - 1;
+    let cpuChoosenIndex = emptyCellsIndex[random];
+
+    let cpuChoosenCell = document.querySelector("[data-celda='"+cpuChoosenIndex+"']");
+    console.log(cpuChoosenCell)
+    
+    tablero[cpuChoosenIndex] = "O";
+
+    cpuChoosenCell.innerHTML = "O";
+
+    resultValidation();
+
+    // CAMBIAR JUGADOR EN TURNO
+    jugadorActivo = "X";
+
+    xContainer
+        .classList
+        .toggle('visually-hidden');
+    oContainer
+        .classList
+        .toggle('visually-hidden');
+
+
+
+}
+    
+
+
 
     
 
@@ -49,7 +72,6 @@ function gestionClick(event) {
     // REVISAR SI LA CELDA ESTÁ VACÍA SI ESTÁ VACÍA, CONTINUAR MARCANDO LA POSICIÓN
     // EN EL ARRAY Y EN EL TABLERO VISIBLE
     if (celdaActiva.innerHTML !== "") {
-
         return;
     }
 
@@ -61,12 +83,8 @@ function gestionClick(event) {
     // MARCAR CELDA CON SÍMBOLO DEL JUGADOR ACTIVO
     celdaActiva.innerHTML = jugadorActivo;
 
-    // CAMBIAR JUGADOR EN TURNO
-    if (jugadorActivo === "X") {
-        jugadorActivo = "O";
-    } else {
-        jugadorActivo = "X";
-    }
+
+
 
     // OCULTAR SÍMBOLO DEL JUGADOR ACTIVO AL CAMBIAR DE TURNO SI LA VARIABLE
     // jugadorActivo ES IGUAL A "X", ENTONCES OCULTAR EL CONTENEDOR DEL SÍMBOLO "O"
@@ -78,13 +96,28 @@ function gestionClick(event) {
         .classList
         .toggle('visually-hidden');
 
-    computerMove();
+
+    // CAMBIAR JUGADOR EN TURNO
+    if (jugadorActivo === "X") {
+        jugadorActivo = "O";
+    } else {
+        jugadorActivo = "X";
+    }
+    
+
+    if (jugadorActivo === "O" && isCPUplaying){
+        setTimeout(computerMove, 500);
+    }
+
+
 
 }
 
 //WINNING CONDITIONS
 
 celdas.forEach(celda => celda.addEventListener("click", gestionClick));
+
+
 
 const winningConditions = [
     [
@@ -143,6 +176,8 @@ function resultValidation() {
         }
 
         boardDisplay.innerHTML = "Winner " + winnerName; // Quien gano?
+        localStorage.setItem("winnerName", winnerName);
+        window.location.href = "../pages/victory.html";
         gameActive = false;
         return;
     }
