@@ -8,7 +8,7 @@ TIC-TAC-TOE
 <h6 align="center">Game for two players who take turns marking the spaces in a three-by-three grid with X or O. </h3>
 <p align="center">This is the third project created in the GeekHub Academy Bootcamp. A way to evaluate the knowledge acquired during the third and fourth week of bootcamp. </p>
 
- <img src="./assets/board.png" width="25%" height="25%" alt="">
+ <img src="./assets/board.png" width="50%" height="50%" alt="">
 
 
 <strong>Genre:</strong> <p>Pen and paper game</p>
@@ -22,12 +22,18 @@ TIC-TAC-TOE
 #### Parts:
 1. Home: LANDING PAGE
 2. PLAYER SELECTION
+ <img src="./assets/choose.png" width="50%" height="50%" alt="">
 3. GAME PAGE
+ <img src="./assets/board.png" width="50%" height="50%" alt="">
 4. VICTORY PAGE
+ <img src="./assets/win.png" width="50%" height="50%" alt="">
 5. DEFEAT PAGE
 6. DRAWN PAGE
 
 <hr>
+
+
+
 
 <h2 align="center">Herramientas y recursos</h2>
 
