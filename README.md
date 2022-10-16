@@ -8,6 +8,9 @@ TIC-TAC-TOE
 <h6 align="center">Game for two players who take turns marking the spaces in a three-by-three grid with X or O. </h3>
 <p align="center">This is the third project created in the GeekHub Academy Bootcamp. A way to evaluate the knowledge acquired during the third and fourth week of bootcamp. </p>
 
+ <img src="../assets/board.png" width="25%" height="25%" alt="">
+
+
 <strong>Genre:</strong> <p>Pen and paper game</p>
 <strong>Players:</strong> <p>2</p>
 <strong>Strategy:</strong> <p>High</p>
@@ -27,14 +30,6 @@ TIC-TAC-TOE
 <hr>
 
 <h2 align="center">Herramientas y recursos</h2>
-
-### Herramientas
-
-<hr>
-
-### plugins chrome
-### Fonts
-
 
 <hr>
 
@@ -59,7 +54,7 @@ TIC-TAC-TOE
 https://www.w3schools.com/jsref/jsref_random.asp
 ##### 2.
 https://stackoverflow.com/
-##### 3.
+
 
 
 
@@ -69,7 +64,7 @@ https://stackoverflow.com/
 -https://en.wikipedia.org/wiki/Tic-tac-toe
 -https://playtictactoe.org/
 -https://codepen.io/lando464/pen/BPGEKO
-https://manualestutor.com/javascript/crea-un-juego-tic-tac-toe-usando-javascript/
+-https://manualestutor.com/javascript/crea-un-juego-tic-tac-toe-usando-javascript/
 
 
 

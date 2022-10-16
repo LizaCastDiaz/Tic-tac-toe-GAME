@@ -28,7 +28,8 @@ function computerMove() {
             emptyCellsIndex.push(i);
     
         }
-    const random = Math.ceil(Math.random() * emptyCellsIndex.length) - 1;
+
+    const random = Math.ceil(Math.random() * tablero.length) - 1;
     emptyCellsIndex[random].oContainer = jugadorActivo;
     resultValidation();
     jugadorActivo();
