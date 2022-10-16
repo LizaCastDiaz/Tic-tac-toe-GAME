@@ -1,8 +1,3 @@
-# Tic-tac-toe-GAME
-
-
-
-TIC-TAC-TOE
 <h1 align="center"> TIC-TAC-TOE GAME</h1> 
 <hr>
 <h6 align="center">Game for two players who take turns marking the spaces in a three-by-three grid with X or O. </h3>
