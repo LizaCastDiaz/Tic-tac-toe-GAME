@@ -8,7 +8,7 @@ TIC-TAC-TOE
 <h6 align="center">Game for two players who take turns marking the spaces in a three-by-three grid with X or O. </h3>
 <p align="center">This is the third project created in the GeekHub Academy Bootcamp. A way to evaluate the knowledge acquired during the third and fourth week of bootcamp. </p>
 
- <img src="./assets/board.png" width="50%" height="50%" alt="">
+ <img src="./assets/board.png" width="60%" height="60%" alt="">
 
 
 <strong>Genre:</strong> <p>Pen and paper game</p>
@@ -27,7 +27,7 @@ TIC-TAC-TOE
  <img src="./assets/board.png" width="50%" height="50%" alt="">
 4. VICTORY PAGE
  <img src="./assets/win.png" width="50%" height="50%" alt="">
-5. DEFEAT PAGE
+5. DEFEAT PAGE <br>
 6. DRAWN PAGE
 
 <hr>
@@ -57,9 +57,9 @@ TIC-TAC-TOE
 ### Documentacion utilizada:
 
 ##### 1.
-https://www.w3schools.com/jsref/jsref_random.asp
+- https://www.w3schools.com/jsref/jsref_random.asp<br>
 ##### 2.
-https://stackoverflow.com/
+- https://stackoverflow.com/<br>
 
 
 
@@ -67,10 +67,10 @@ https://stackoverflow.com/
 ---
 ### Referencias y codigo en el que me apoye
 
--https://en.wikipedia.org/wiki/Tic-tac-toe
--https://playtictactoe.org/
--https://codepen.io/lando464/pen/BPGEKO
--https://manualestutor.com/javascript/crea-un-juego-tic-tac-toe-usando-javascript/
+- https://en.wikipedia.org/wiki/Tic-tac-toe 
+- https://playtictactoe.org/
+- https://codepen.io/lando464/pen/BPGEKO
+- https://manualestutor.com/javascript/crea-un-juego-tic-tac-toe-usando-javascript/
 
 
 
