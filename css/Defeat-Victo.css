@@ -1,4 +1,4 @@
-:root{
+:root {
     --header-color: rgba(245, 204, 79, 0.823);
     --body-color: rgba(244, 216, 132, 0.876);
     --lines-color: #ffe69c;
@@ -6,39 +6,31 @@
     --font-color: black;
     --ff-primary: 'Noto Sans Mono', monospace;
     --ff-heading: var(--ff-primary);
-  
 
 }
 
 /************************ LANDING PAGE AND PLAYERS *************************/
 
 /* HEADER */
-body{
-    font-family:var(--ff-heading);
+body {
+    font-family: var(--ff-heading);
     background-color: var(--header-color);
-    
+
 }
 
-
-
-
-
-
-
 /* MAIN */
-.main-container{
+.main-container {
     display: flex;
     align-items: center;
     height: 70vh;
     width: 100vw;
-   
+
 }
 
-h1{
+h1 {
     font-family: var(--ff-heading);
     font-weight: 700;
-}  
-
+}
 
 /* VICTORY PAGE */
 
@@ -47,7 +39,7 @@ h1{
     height: 60%;
 }
 
-#Draw{
+#Draw {
     width: 45%;
     height: 60%;
 

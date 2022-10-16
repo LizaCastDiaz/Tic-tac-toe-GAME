@@ -1,4 +1,4 @@
-:root{
+:root {
     --header-color: rgba(245, 204, 79, 0.823);
     --body-color: rgba(244, 216, 132, 0.876);
     --lines-color: rgb(255, 230, 156);
@@ -6,37 +6,33 @@
     --font-color: black;
     --ff-primary: 'Noto Sans Mono', monospace;
     --ff-heading: var(--ff-primary);
-  
 
 }
 
-
 /* HEADER */
-body{
-    font-family:var(--ff-heading);
+body {
+    font-family: var(--ff-heading);
 }
 
 .con-header {
-    
-    height: 15vh;
-   }
 
+    height: 15vh;
+}
 
 .con-row {
-    background-color :var(--header-color);
+    background-color: var(--header-color);
     height: 100%;
     width: 100vw;
-    
-    
+
 }
 
 .logo-img {
-   width: 85%;
-   height: 70%;
-    
-} 
+    width: 85%;
+    height: 70%;
+
+}
 /* MAIN LANDING PAGE */
-.main-container{
+.main-container {
     display: flex;
     align-items: center;
     height: 90vh;

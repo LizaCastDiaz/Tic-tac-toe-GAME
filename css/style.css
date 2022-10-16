@@ -1,4 +1,4 @@
-:root{
+:root {
     --header-color: rgba(245, 204, 79, 0.823);
     --body-color: rgba(244, 216, 132, 0.876);
     --lines-color: rgb(255, 230, 156);
@@ -6,43 +6,38 @@
     --font-color: black;
     --ff-primary: 'Noto Sans Mono', monospace;
     --ff-heading: var(--ff-primary);
-  
 
 }
-.selector-for-some-widget{
+.selector-for-some-widget {
     box-sizing: content-box;
 }
 
-
 /* HEADER */
-body{
-    font-family:var(--ff-heading);
+body {
+    font-family: var(--ff-heading);
     background-color: var(--header-color);
-    
+
 }
 
 .con-header {
-    
-    height: 15vh;
-   }
 
+    height: 15vh;
+}
 
 .con-row {
-    background-color :var(--header-color);
+    background-color: var(--header-color);
     height: 100%;
-    
-    
+
 }
 
 .logo-img {
-   width: 85%;
-   height: 70%;
-    
-} 
+    width: 85%;
+    height: 70%;
 
+}
 
 /* MAIN */
-.main-container{
+.main-container {
     display: flex;
     align-items: center;
     height: 70vh;
@@ -50,7 +45,7 @@ body{
     background-color: var(--body-color);
 }
 
-.box-container{ 
+.box-container {
     width: 20vw;
     height: 15vh;
 }
@@ -60,35 +55,32 @@ body{
     align-items: center;
     cursor: pointer;
     width: 100%;
-    height: 100%; 
+    height: 100%;
 }
 
 #box-uno {
-    
+
     border-right: solid 3px black;
-    border-bottom: solid 3px black;      
+    border-bottom: solid 3px black;
 }
 #box-dos {
-    
+
     border-right: solid 3px black;
-    border-left: solid 3px black;      
+    border-left: solid 3px black;
 }
 #box-tres {
     border-bottom: solid 3px black;
 
 }
-#box-siete{
+#box-siete {
     border-right: solid 3px black;
-      }
-#box-ocho{
+}
+#box-ocho {
     border-right: solid 3px black;
-        
+
 }
 
 /* BOARD GAME */
-
-
-
 
 /* footer */
 .footer {
@@ -98,7 +90,7 @@ body{
     display: flex;
 }
 
-h2{
+h2 {
     font-family: var(--ff-heading);
     font-weight: 900;
 }

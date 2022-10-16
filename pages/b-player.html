@@ -43,86 +43,105 @@
                 <div class="row m-0 ">
                     <div class="container">
                         <div class="row justify-content-md-center flex-column">
-                          <div class="col col-lg ">
-                            <h1><strong>Choose</strong></h1>
-                          </div>
-                          <form class="row g-3 justify-content-md-center flex-column needs-validation" novalidate="" action="./agametable.html">
-                            <div class="form-check d-flex ">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                  CPU
-                                </label>
-                              </div>
-                              <div class="form-check d-flex">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
-                                <label class="form-check-label" for="flexRadioDefault2">
-                                  2nd player
-                                </label>
-                              </div>
-                            <div class="col position-relative">
-                              <label for="validationTooltip01" class="form-label">Name</label>
-                              <input type="text" class="form-control" id="validationTooltip01" value="" required="">
-                        
+                            <div class="col col-lg ">
+                                <h1>
+                                    <strong>Choose</strong>
+                                </h1>
                             </div>
-                            <div id="secondPlayer" class="col position-relative visually-hidden">
-                                <label for="validationTooltip02" class="form-label">2nd player</label>
-                                <input type="text" class="form-control" id="validationTooltip02" value="" required="">
-                          
-                              </div>
-                    
-                            <div class="col-12">
-                              <button id="buttonStart" class="btn btn-outline-dark btn-sm mt-2 px-2" type="submit">Start the game</button>
-                            </div>
-                          </form>
-                          
-                          
-    
+                            <form
+                                class="row g-3 justify-content-md-center flex-column needs-validation"
+                                novalidate=""
+                                action="./agametable.html">
+                                <div class="form-check d-flex ">
+                                    <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="flexRadioDefault"
+                                        id="flexRadioDefault1"
+                                        checked="checked">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        CPU
+                                    </label>
+                                </div>
+                                <div class="form-check d-flex">
+                                    <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="flexRadioDefault"
+                                        id="flexRadioDefault2">
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        2nd player
+                                    </label>
+                                </div>
+                                <div class="col position-relative">
+                                    <label for="validationTooltip01" class="form-label">Name</label>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="validationTooltip01"
+                                        value=""
+                                        required="">
+
+                                </div>
+                                <div id="secondPlayer" class="col position-relative visually-hidden">
+                                    <label for="validationTooltip02" class="form-label">2nd player</label>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="validationTooltip02"
+                                        value=""
+                                        required="">
+
+                                </div>
+
+                                <div class="col-12">
+                                    <button
+                                        id="buttonStart"
+                                        class="btn btn-outline-dark btn-sm mt-2 px-2"
+                                        type="submit">Start the game</button>
+                                </div>
+                            </form>
+
                         </div>
 
-                </div>
-            </div>
-
-        </div>
-
-        <!-- FOOTER
-        <div class="footer">
-            <div class="container-fluid d-flex justify-content-center">
-                <div class="row d-flex text-center align-items-center">
-                    <div class="col footer-text-container">
-                        <h2>TIC TAC TOE</h2>
                     </div>
                 </div>
+
             </div>
-        </div> -->
-        <script>
-            let secondPlayerRadio = document.querySelector("#flexRadioDefault2");
-            let secondPlayerInput = document.querySelector("#secondPlayer");
-            let buttonStart = document.querySelector("#buttonStart");
-            let firstPlayer = document.querySelector("#validationTooltip01");
-            let secondPlayer = document.querySelector("#validationTooltip02");
-            let cpuRadio = document.querySelector("#flexRadioDefault1");
 
-            function showInput(){
-                secondPlayerInput.classList.remove("visually-hidden");
-            }
+            <!-- FOOTER <div class="footer"> <div class="container-fluid d-flex
+            justify-content-center"> <div class="row d-flex text-center align-items-center">
+            <div class="col footer-text-container"> <h2>TIC TAC TOE</h2> </div> </div>
+            </div> </div> -->
+            <script>
+                let secondPlayerRadio = document.querySelector("#flexRadioDefault2");
+                let secondPlayerInput = document.querySelector("#secondPlayer");
+                let buttonStart = document.querySelector("#buttonStart");
+                let firstPlayer = document.querySelector("#validationTooltip01");
+                let secondPlayer = document.querySelector("#validationTooltip02");
+                let cpuRadio = document.querySelector("#flexRadioDefault1");
 
-            function handleButtonStart(){
-                localStorage.setItem("firstPlayer", firstPlayer.value);
-                
-
-                if (cpuRadio.checked){
-                    localStorage.setItem("secondPlayer", "cpu");
-
-                }else{
-                    localStorage.setItem("secondPlayer", secondPlayer.value);
+                function showInput() {
+                    secondPlayerInput
+                        .classList
+                        .remove("visually-hidden");
                 }
 
-            }
+                function handleButtonStart() {
+                    localStorage.setItem("firstPlayer", firstPlayer.value);
 
-            secondPlayerRadio.addEventListener("click",showInput);
-            buttonStart.addEventListener("click", handleButtonStart);
+                    if (cpuRadio.checked) {
+                        localStorage.setItem("secondPlayer", "cpu");
 
-        </script>
+                    } else {
+                        localStorage.setItem("secondPlayer", secondPlayer.value);
+                    }
 
-    </body>
-</html>
+                }
+
+                secondPlayerRadio.addEventListener("click", showInput);
+                buttonStart.addEventListener("click", handleButtonStart);
+            </script>
+
+        </body>
+    </html>
